@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.main-container > img{
+    margin-left: 147px;
+    margin-top: 31px;
+}
+
+.main-container > h1{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container .cart-container{
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+
+.sub-container .cart-container .flex-1{
+    display: flex;
+    gap: 80px;
+    padding: 1rem;
+}
+
+.flex-1 .title{
+    display: flex; 
+    flex-direction: row;
+    width: 438px;
+}
+
+.flex-1 .title .header{
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.flex-1 .title > img{
+    width: 100px;
+    height: 100px;
+}
+
+.flex-1 .btn-qty{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.flex-1 .single-price, .sub-total{
+    margin-top: 40px;
+}
+
+.cart-container .total{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-container .checkout-btn{
+    width: fit-content;
+    margin-top: 30px;
+    padding: 0.5rem;
+    font-size: 20px;
+    background-color: #202E79;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.main-container .checkout-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .checkout-btn:hover{
+    cursor: pointer;
+    background: white;
+    color: #202E79;
+    transition: 0.2s ease;
+    border: 2px solid #202E79;
+}
