@@ -13,21 +13,24 @@ const Contact = () => {
 
     return (
         <div class="contact-container">
-            <img src='./images/logo.png' className='logo'></img>
-            <ul className='nav'>
-                <Link to="/" style={style}>
-                    <li><a>Home</a></li>
-                </Link>
-                <Link to="/products" style={style}>
-                    <li><a>Products</a></li>
-                </Link>
-                <Link to="/contact" style={style}>
-                    <li><a>Contact</a></li>
-                </Link>
-                <Link to="/cart" style={style}>
-                    <li><a><FaShoppingCart/></a></li>
-                </Link>
-            </ul>
+            <div className='home-sub-container'>
+                <img src='./images/logo.png' className='logo'></img>
+                <ul className='nav'>
+                    <Link to="/" style={style}>
+                        <li><a>Home</a></li>
+                    </Link>
+                    <Link to="/products" style={style}>
+                        <li><a>Products</a></li>
+                    </Link>
+                    <Link to="/contact" style={style}>
+                        <li><a>Contact</a></li>
+                    </Link>
+                    <Link to="/cart" style={style}>
+                        <li><a><FaShoppingCart/></a></li>
+                    </Link>
+                </ul>
+            </div>
+            
 
             
             <h1 className='heading'>Contact Us</h1>

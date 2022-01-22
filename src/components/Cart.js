@@ -52,19 +52,24 @@ const Cart = ({cartItems, addItems, removeItems}) => {
                 <div className='cart-container'>
                     {cartItems.length === 0 && <div>Your Cart is Empty</div>}
                     {cartItems.map((item) => 
-                    <div className='flex-1'>
-                        <div className='title'>
-                            <img src={item.image}></img>
-                            <div className='header'>{item.title}</div>
+                    <div>
+                        <div className='flex-1'>
+                            <div className='title'>
+                                <img src={item.image}></img>
+                                <div className='header'>{item.title}</div>
+                            </div>
+                            <div className='btn-qty'>
+                                <button onClick={() => addItems(item)}>+</button>
+                                <div>{item.qty}</div>
+                                <button onClick={() => removeItems(item)}>-</button>
+                            </div>
+                            <div className='single-price'>${item.price}</div>
+                            <div className='sub-total'>${item.qty * item.price}</div>
                         </div>
-                        <div className='btn-qty'>
-                            <button onClick={() => addItems(item)}>+</button>
-                            <div>{item.qty}</div>
-                            <button onClick={() => removeItems(item)}>-</button>
-                        </div>
-                        <div className='single-price'>${item.price}</div>
-                        <div className='sub-total'>${item.qty * item.price}</div>
+                        <hr></hr>
                     </div>)}
+                    
+                    
                     {cartItems.length !== 0 && (
                     <div className='total'>Total: {totalPrice}</div>)}
             

@@ -11,21 +11,24 @@ const HomePage = () => {
 
     return (
         <div className='container'>
-            <img src='./images/logo.png'></img>
-                <ul className='nav'>
-                    <Link to="/" style={style}>
-                        <li><a>Home</a></li>
-                    </Link>
-                    <Link to="/products" style={style}>
-                        <li><a>Products</a></li>
-                    </Link>
-                    <Link to="/contact" style={style}>
-                        <li><a>Contact</a></li>
-                    </Link>
-                    <Link to="/cart" style={style}>
-                        <li><a><FaShoppingCart/></a></li>
-                    </Link>
-                </ul>
+            <div className='home-sub-container'>
+                <img src='./images/logo.png'></img>
+                    <ul className='nav'>
+                        <Link to="/" style={style}>
+                            <li><a>Home</a></li>
+                        </Link>
+                        <Link to="/products" style={style}>
+                            <li><a>Products</a></li>
+                        </Link>
+                        <Link to="/contact" style={style}>
+                            <li><a>Contact</a></li>
+                        </Link>
+                        <Link to="/cart" style={style}>
+                            <li><a><FaShoppingCart/></a></li>
+                        </Link>
+                    </ul>
+            </div>
+            
             <div className='showcase-grid'>
                 <div className='showcase'>
                     <h1 className='header'>Welcome To Cinefy</h1>
